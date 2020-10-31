@@ -1,0 +1,20 @@
+package Os;
+
+import java.io.PrintWriter;
+
+public class process3 extends Simulator implements Runnable{
+
+	@Override
+	public void run() {
+        try{ 
+        	System.out.println("Process 3:");
+        	for (int i = 0; i <301; i++) {
+        		System.out.println(i);
+        	}
+        	} 
+        catch (Exception e) { 
+            System.out.println ("Memory is insufficient"); 
+        } 
+    } 
+
+}

@@ -1,0 +1,41 @@
+package Os;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class SystemCalls {
+
+
+public static void WriteFile(String s,String path) throws IOException {
+	 BufferedWriter writer = new BufferedWriter(new FileWriter(path));
+	    writer.write(s);
+	   writer.close(); 
+}
+
+public static void readfile(String path) throws IOException {
+	 FileReader fr = new FileReader(path);
+	 fr.close();
+}
+
+public static void PrintFile(String path) throws IOException {
+	 BufferedReader br = new BufferedReader(new FileReader(path));
+	 String line;
+	 while ((line = br.readLine()) != null) {
+	   print(line);
+	 }
+	 br.close();
+}
+
+public static String TakeInput() throws IOException {
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	String s=br.readLine();
+	return s;
+}
+public static void print(Object  s) {
+	System.out.println(s);
+}
+}

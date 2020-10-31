@@ -1,0 +1,23 @@
+package Os;
+
+public class process2 extends Simulator implements Runnable{
+	static final String process2Id="2"; 
+	
+	@Override
+	public void run() {
+        try{ System.out.println("Process 2:");
+        	System.out.println("Please, Enter the filename with the extension. All extensions are acceptable (i.e. 'OS.ppt')");
+        	String filename=TakeInput();
+        	System.out.println("Please, Enter the Data you want to write in the file above");
+        	String data=TakeInput();
+        	WriteFile(data, filename);
+        	} 
+        catch (Exception e) { 
+            System.out.println ("The filename is missing or The Data entered is incompitable"); 
+        } 
+    }
+}
+
+
+ 
+ 

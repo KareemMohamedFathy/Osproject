@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Os.M1&apos; to &apos;Simulator&apos;&#x0D;&#x0A;- Original project: &apos;Os&apos;&#x0D;&#x0A;- Original element: &apos;Os.M1&apos;&#x0D;&#x0A;- Renamed element: &apos;Os.Simulator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;M1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Os{M1.java[M1" matchStrategy="1" name="Simulator" qualified="false" references="true" similarDeclarations="false" stamp="1582744493388" textual="false" version="1.0"/>
+</session>

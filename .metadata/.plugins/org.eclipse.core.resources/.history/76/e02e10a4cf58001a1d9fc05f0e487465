@@ -1,0 +1,26 @@
+package Os;
+
+public class process5 extends Simulator implements Runnable{
+
+	@Override
+	public void run() {
+        try{ System.out.println("Process 5:");
+        	System.out.println("Please, Enter the minimum number");
+        	int a=Integer.parseInt(TakeInput());
+            System.out.println("Please, Enter the maximum number");
+
+        	int b=Integer.parseInt(TakeInput());
+        	
+        	String s="";
+        	for (int i =a; i <=b; i++) {
+        	s+=i;
+        	s+="\n"; 
+        	}
+        	WriteFile(s,"count.txt");
+        	} 
+        catch (Exception e) { 
+            System.out.println ("The Data entered is incompitable or Time limit exceeded"); 
+        } 
+    } 	
+
+}
